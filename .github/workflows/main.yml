@@ -13,4 +13,4 @@ jobs:
       with:
         swift-version: '5.1.4'
     - name: Build
-      run: make build
+      run: swift build
