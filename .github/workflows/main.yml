@@ -13,9 +13,6 @@ jobs:
       uses: YOCKOW/Action-setup-swift@v1.1.0
       with:
         swift-version: '5.2.2'
-    - name: Build
-      run:
-        make
     - name: Test
       run:
         make test
