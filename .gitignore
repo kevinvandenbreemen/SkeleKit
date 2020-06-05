@@ -3,3 +3,7 @@
 /Packages
 /*.xcodeproj
 xcuserdata/
+
+# Don't track linux main and test manifests as these are generated at build time
+Tests/LinuxMain.swift
+*XCTestManifests.swift
