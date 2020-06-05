@@ -1,0 +1,16 @@
+name: Validate compilation on Ubuntu 18.04
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: [ubuntu-latest]
+
+    steps:
+    - name: Swift Setup
+      uses: YOCKOW/Action-setup-swift@v1.1.0
+      with:
+        swift-version: '5.1.4'
+    - name: Build
+      run: make
